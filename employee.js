@@ -94,7 +94,7 @@ console.log("pre increment:",++visitors);//post decrement it will become 100 so 
 console.log("pre decrement:",--visitors);// pre decrement it will becoime 101 so it subtract first and print 100
 
 
-// employee portal
+// employee
 
 
 
