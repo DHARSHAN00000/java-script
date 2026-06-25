@@ -1,8 +1,6 @@
-// Employee Management System
+
 
 let employees = [];
-
-// Add Employee
 function addEmployee(id, name, salary) {
     employees.push({
         id: id,
@@ -11,8 +9,6 @@ function addEmployee(id, name, salary) {
     });
     console.log("Employee Added Successfully");
 }
-
-// View Employees
 function viewEmployees() {
     console.log("Employee List:");
     
@@ -23,7 +19,6 @@ function viewEmployees() {
     }
 }
 
-// Calculate Bonus (Callback Function)
 function calculateBonus(id, callback) {
     let employee = employees.find(emp => emp.id === id);
 
@@ -41,7 +36,6 @@ function bonus(employee) {
     );
 }
 
-// Search Employee By ID
 function searchEmployee(id) {
     let employee = employees.find(emp => emp.id === id);
 
@@ -52,7 +46,6 @@ function searchEmployee(id) {
     }
 }
 
-// Delete Employee
 function deleteEmployee(id) {
     let index = employees.findIndex(emp => emp.id === id);
 
@@ -64,12 +57,11 @@ function deleteEmployee(id) {
     }
 }
 
-// Total Employees Count
+
 function totalEmployees() {
     console.log("Total Employees:", employees.length);
 }
 
-// Sample Data
 addEmployee(101, "Dharshan", 50000);
 addEmployee(102, "Rahul", 60000);
 addEmployee(103, "Anu", 45000);
